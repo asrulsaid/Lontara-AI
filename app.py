@@ -9,7 +9,7 @@ import base64
 app = Flask(__name__)
 
 # Load prebuilt model
-model = keras.models.load_model('base_model.h5')
+model = keras.models.load_model('model/base_model.h5')
 
 # Handle GET request
 classes = ['a', 'ba', 'ca', 'da', 'ga', 'ha', 'ja', 'ka', 'la', 'ma', 'mpa',

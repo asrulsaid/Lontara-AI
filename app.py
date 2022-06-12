@@ -18,7 +18,7 @@ classes = ['a', 'ba', 'ca', 'da', 'ga', 'ha', 'ja', 'ka', 'la', 'ma', 'mpa',
 
 @app.route('/', methods=['GET'])
 def drawing():
-    return render_template('draw.html')
+    return render_template('home.html')
 
 # Handle POST request
 
@@ -27,7 +27,10 @@ def drawing():
 def canvas():
     # Recieve base64 data from the user form
     canvasdata = request.form['canvasimg']
+    lontara = request.form['let_lontara']
+    print(lontara)
     encoded_data = request.form['canvasimg'].split(',')[1]
+    # print(canvasdata)
 
     # Decode base64 image to python array
     nparr = np.fromstring(base64.b64decode(encoded_data), np.uint8)
@@ -47,12 +50,17 @@ def canvas():
     img = np.expand_dims(x, axis=0)
     img = np.vstack([img])
     try:
+        print(model.predict(img, batch_size=8))
         prediction = np.argmax(model.predict(img, batch_size=8))
         print(prediction)
         print(f"Prediction Result : {str(classes[prediction])}")
-        return render_template('draw.html', response=str(classes[prediction]), canvasdata=canvasdata, success=True)
+        if lontara == classes[prediction]:
+            result = 'success'
+        else:
+            result = 'error'
+        return result
     except Exception as e:
-        return render_template('draw.html', response=str(e), canvasdata=canvasdata)
+        return render_template('home.html', response=str(e), canvasdata=canvasdata)
 
 
 if __name__ == '__main__':

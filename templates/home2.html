@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>eNno Bootstrap Template - Index</title>
+  <title>Lontara-AI</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -68,7 +68,6 @@
           <h2>Belajar aksara Lontara secara interaktif. Menggunakan teknologi pemrosesan gambar dengan Deep Learning sebagai backendnya, sehingga proses pembelajaran lebih menyenangkan!</h2>
           <div class="d-flex">
             <a href="#drawing" class="btn-get-started scrollto">Get Started</a>
-            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img">
@@ -90,65 +89,34 @@
             <img src="{{ url_for('static', filename='img/lontara.png') }}" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-              <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda</li>
-            </ul>
+            <h3>Mengenalkan Budaya dengan cara yang berbeda</h3>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur.
+              <b>Aksara Lontara</b> adalah aksara atau huruf tradisional masyarakat Suku Bugis-Makassar yang terdiri atas 23 aksara dasar. Lontara berasal dari kata lontar, yaitu salah satu jenis tumbuhan yang digunakan sebagai media tulis saat itu di Sulawesi Selatan.
             </p>
+            <!-- <ul>
+              <li><i class="bi bi-check-circle"></i> Antarmuka yang menarik dengan hasil yang mudah dipahami</li>
+              <li><i class="bi bi-check-circle"></i> gratis tanpa dikenakan biaya apapun</li>
+              <li><i class="bi bi-check-circle"></i> Akurasi yang baik dalam mengenali Aksara yang diinput oleh pengguna</li>
+            </ul> -->
+            <p>
+              Akan tetapi, saat ini Aksara Lontara sudah banyak dilupakan  masyarakat Sulawesi Selatan, khususnya oleh para generasi muda. Maka dari itu, kami berharap dengan adanya Lontara-AI ini dapat meningkatkan pemahaman dan membangun kesadaran anak muda di Sulawesi Selatan khususnya, agar senantiasa melestarikan warisan leluhur sekaligus memperkenalkan Aksara Lontara pada Dunia.
+            </p>
+            <!-- <h3>ᨔᨙᨂᨛᨀ ᨔᨗᨆᨈ ᨍᨑᨘ ᨕᨘᨅᨒᨗ ᨔᨙᨂᨛᨀᨗ ᨔᨗᨄᨘᨄᨘᨑᨙ ᨒᨗᨊᨚ</h3> -->
           </div>
         </div>
 
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts">
-      <div class="container">
-
-        <div class="row counters">
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Clients</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Projects</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Hours Of Support</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Hard Workers</p>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Counts Section -->
-
     <section id="drawing">
       <div class="container aqua-gradient">
         <div class="col content text-center">
-          <h3>Coba gambar aksara dibawah ini!</h3>
+          <h3>Coba tulis aksara dibawah ini!</h3>
         </div>
         <div class="row pt-4 justify-content-center text-center">
           <div class="col-lg-4 text-center">
             <img id="lontara_ex" src="{{ url_for('static', filename='img/lontara/ka.png') }}" class="img-fluid animated" alt="">
+            <h1 id="txt_lontara"></h1>
           </div>
           <div class="col-lg-4">
             
@@ -168,7 +136,7 @@
     </section><!-- End About Section -->
 
     <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
+    <!-- <section id="cta" class="cta"> -->
       <!-- <div class="container">
 
         <div class="text-center">
@@ -178,67 +146,91 @@
         </div>
 
       </div> -->
-    </section><!-- End Cta Section -->
+    <!-- </section>End Cta Section -->
 
     <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">
       <div class="container">
 
         <div class="section-title">
-          <span>Team</span>
-          <h2>Team</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+          <span>Our Team</span>
+          <h2>Our Team</h2>
+          <!-- <p>Senang berkenalan dengan anda,inilah wajah wajah kami sebagai pengembang aplikasi</p> -->
         </div>
 
-        <div class="row">
+        <div class="row justify-content-md-center"">
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <img src="{{ url_for('static', filename='img/team/team-1.jpg') }}" alt="">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
-              <p>
-                Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
-              </p>
-              <div class="social">
+              <h4>Asrul Said</h4>
+              <span>D4 Teknik Komputer dan Jaringan</span>
+              <span>Politeknik Negeri Ujung Pandang</span>
+              <!-- <div class="social">
                 <a href=""><i class="bi bi-twitter"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
                 <a href=""><i class="bi bi-instagram"></i></a>
                 <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
+              </div> -->
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <img src="{{ url_for('static', filename='img/team/team-2.jpg') }}" alt="">
-              <h4>Sarah Jhinson</h4>
-              <span>Product Manager</span>
-              <p>
-                Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
-              </p>
-              <div class="social">
+              <h4>Kisma</h4>
+              <span>D4 Teknik Komputer dan Jaringan</span>
+              <span>Politeknik Negeri Ujung Pandang</span>
+              <!-- <div class="social">
                 <a href=""><i class="bi bi-twitter"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
                 <a href=""><i class="bi bi-instagram"></i></a>
                 <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
+              </div> -->
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <img src="{{ url_for('static', filename='img/team/team-3.jpg') }}" alt="">
-              <h4>William Anderson</h4>
-              <span>CTO</span>
-              <p>
-                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-              </p>
-              <div class="social">
+              <h4>Zaenul Bahri</h4>
+              <span>Rekayasa Sistem Komputer</span>
+              <span>Universitas Teknologi Mataram</span>
+              <!-- <div class="social">
                 <a href=""><i class="bi bi-twitter"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
                 <a href=""><i class="bi bi-instagram"></i></a>
                 <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="{{ url_for('static', filename='img/team/team-3.jpg') }}" alt="">
+              <h4>Budiansyah</h4>
+              <span>Teknik Elektro</span>
+              <span>Universitas Udayana</span>
+              <!-- <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="{{ url_for('static', filename='img/team/team-3.jpg') }}" alt="">
+              <h4>Afdal Ramadhan</h4>
+              <span>Teknik Sipil</span>
+              <span>Politeknik Negeri Ujung Pandang</span>
+              <!-- <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div> -->
             </div>
           </div>
 
@@ -435,8 +427,8 @@
           }, 250);
 
           Swal.fire({
-            title:'Good job!',
-            text:'You clicked the button!',
+            title:'Horeee kamu benar!',
+            text:'Yuk Lanjut ^_^',
             icon:'success',
             showConfirmButton: false,
             timer: 3000
@@ -493,6 +485,7 @@
       if (!usedImages[num]){
         document.getElementById("lontara_ex").src = "static/img/lontara/"+imagesArray[num]+".png";
         document.getElementById('let_lontara').value = imagesArray[num];
+        document.getElementById('txt_lontara').innerHTML = imagesArray[num];
         // console.log("static/"+imagesArray[num]);
         
           usedImages[num] = true;

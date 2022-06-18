@@ -9,7 +9,8 @@ import base64
 app = Flask(__name__)
 
 # Load prebuilt model
-model = keras.models.load_model('model/base_model.h5')
+# model = keras.models.load_model('model/base_model.h5')
+model = keras.models.load_model('model/improved_model_v4.h5')
 
 # Handle GET request
 classes = ['a', 'ba', 'ca', 'da', 'ga', 'ha', 'ja', 'ka', 'la', 'ma', 'mpa',
@@ -18,7 +19,7 @@ classes = ['a', 'ba', 'ca', 'da', 'ga', 'ha', 'ja', 'ka', 'la', 'ma', 'mpa',
 
 @app.route('/', methods=['GET'])
 def drawing():
-    return render_template('home.html')
+    return render_template('home2.html')
 
 # Handle POST request
 

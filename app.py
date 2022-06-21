@@ -19,7 +19,7 @@ classes = ['a', 'ba', 'ca', 'da', 'ga', 'ha', 'ja', 'ka', 'la', 'ma', 'mpa',
 
 @app.route('/', methods=['GET'])
 def drawing():
-    return render_template('home2.html')
+    return render_template('home.html')
 
 # Handle POST request
 

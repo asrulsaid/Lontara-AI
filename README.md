@@ -1,1 +1,1 @@
-"# Lontara-AI" 
+# Lontara-AI
